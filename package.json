@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "test": "npm run scss-compile",
-    "scss-compile": "node-sass -rw style/scss -o style/css",
+    "scss-compile": "node-sass -rw static/scss -o static/css",
     "watch": "npm run scss-compile"
   },
   "repository": {
