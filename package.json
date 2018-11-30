@@ -1,0 +1,27 @@
+{
+  "name": "healthy-living-with-steph",
+  "version": "1.0.0",
+  "description": "This is the code for the Healthy Living with Steph website.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "npm run scss-compile",
+    "scss-compile": "node-sass -rw style/scss -o style/css",
+    "watch": "npm run scss-compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hayleyavw/healthy-living-with-steph.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hayleyavw/healthy-living-with-steph/issues"
+  },
+  "homepage": "https://github.com/hayleyavw/healthy-living-with-steph#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "node-sass": "^4.10.0",
+    "scss-compile": "^0.1.7"
+  }
+}
