@@ -1,6 +1,9 @@
+@charset "UTF-8";
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif; }
+  body p {
+    text-align: justify; }
 
 nav, section, footer {
   width: 100vw; }
@@ -20,14 +23,15 @@ footer {
   height: 10vh;
   background-color: #C3C6CC; }
 
-h1, h2, h3, a {
+h1, h2, h3, h4, a, .number-circle {
   font-family: 'Amatic SC', cursive; }
 
 h1 {
   font-size: 8rem; }
 
 h2 {
-  font-size: 3rem; }
+  font-size: 3rem;
+  margin: 20px; }
 
 h3 {
   font-size: 2rem; }
@@ -47,10 +51,11 @@ h3 {
     left: 50%;
     transform: translate(-50%, -60%); }
 
+.content, .testimonial-content {
+  width: 90vw; }
+
 .content {
-  height: 80vh;
   background-color: #FFF;
-  width: 90vw;
   margin: auto;
   text-align: center; }
   .content h2 {
@@ -66,5 +71,64 @@ h3 {
       border-radius: 50%; }
 
 .testimonial {
-  height: 30vh;
-  background-color: #D0DDE3; }
+  background-color: #D0DDE3;
+  padding: 20px; }
+  .testimonial .testimonial-content {
+    height: 100%;
+    display: flex;
+    margin: 0 5vw; }
+    .testimonial .testimonial-content img {
+      height: 85%;
+      max-height: 200px;
+      border-radius: 50%;
+      margin: auto; }
+    .testimonial .testimonial-content .quote p {
+      text-align: center !important; }
+    .testimonial .testimonial-content blockquote {
+      text-align: center !important;
+      margin: auto 20px;
+      font-family: 'Caveat', cursive;
+      font-size: 1.5rem;
+      quotes: "“" "”" "‘" "’";
+      display: flex;
+      justify-content: space-between; }
+    .testimonial .testimonial-content blockquote:before {
+      font-size: 4rem;
+      content: open-quote;
+      margin-right: 20px; }
+    .testimonial .testimonial-content blockquote:after {
+      font-size: 4rem;
+      content: close-quote; }
+
+#block-2 .step {
+  margin: 40px 0; }
+  #block-2 .step .number-circle {
+    border-radius: 50%;
+    width: 210px;
+    height: 70px;
+    padding: 20px;
+    background: #fff;
+    color: #666;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold; }
+  #block-2 .step #number-1 {
+    background-color: #ead1dc; }
+  #block-2 .step #number-2 {
+    background-color: #ffe599;
+    margin: auto;
+    margin-left: 40px !important; }
+  #block-2 .step #number-3 {
+    background-color: #9fc5e8; }
+  #block-2 .step #number-1, #block-2 .step #number-3 {
+    margin: auto;
+    margin-right: 40px !important; }
+  #block-2 .step .step-number-left, #block-2 .step .step-number-right {
+    display: flex; }
+    #block-2 .step .step-number-left h4, #block-2 .step .step-number-right h4 {
+      font-size: 1.4rem;
+      margin: 0px; }
+  #block-2 .step .step-number-left h4 {
+    text-align: left; }
+  #block-2 .step .step-number-right h4 {
+    text-align: right; }

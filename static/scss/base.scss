@@ -1,6 +1,9 @@
 body {
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
+	p {
+		text-align: justify;
+	}
 }
 
 nav, section, footer {
@@ -26,7 +29,7 @@ footer {
 	background-color: #C3C6CC;
 }
 
-h1, h2, h3, a {
+h1, h2, h3, h4, a, .number-circle {
 	font-family: 'Amatic SC', cursive;
 }
 
@@ -36,6 +39,7 @@ h1 {
 
 h2 {
 	font-size: 3rem;
+	margin: 20px;
 }
 
 h3 {
@@ -60,10 +64,12 @@ h3 {
 	}
 }
 
-.content {
-	height: 80vh;
-	background-color: #FFF;
+.content, .testimonial-content {
 	width: 90vw;
+}
+
+.content {
+	background-color: #FFF;
     margin: auto;
     text-align: center;
 	h2 {
@@ -86,6 +92,89 @@ h3 {
 }
 
 .testimonial {
-	height: 30vh;
 	background-color: #D0DDE3;
+	padding: 20px;
+	.testimonial-content {
+		height: 100%;
+		display: flex;
+		margin: 0 5vw;
+		img {
+			height: 85%;
+			max-height: 200px;
+			border-radius: 50%;
+			margin: auto;
+		}
+		.quote {
+			p {
+				text-align: center !important;
+			}
+		}
+		blockquote {
+			text-align: center !important;
+			margin: auto 20px;
+			font-family: 'Caveat', cursive;
+			font-size: 1.5rem;
+		  	quotes: "“" "”" "‘" "’";
+		  	display: flex;
+		  	justify-content: space-between;
+		}
+		blockquote:before {
+			font-size: 4rem;
+		    content: open-quote;
+		    margin-right: 20px;
+		}
+		blockquote:after {
+			font-size: 4rem;
+		    content: close-quote;
+		}
+	}
+}
+
+#block-2 {
+	.step {
+		margin: 40px 0;
+		.number-circle {
+			border-radius: 50%;
+			width: 210px;
+			height: 70px;
+			padding: 20px;
+			background: #fff;
+			color: #666;
+			text-align: center;
+			font-size: 3rem;
+			font-weight: bold;
+		}
+		#number-1 {
+			background-color: #ead1dc;
+		}
+		#number-2 {
+			background-color: #ffe599;
+			margin: auto;
+			margin-left: 40px !important;
+		}
+		#number-3 {
+			background-color: #9fc5e8;
+		}
+		#number-1, #number-3 {
+			margin: auto;
+			margin-right: 40px !important;
+		}
+		.step-number-left, .step-number-right {
+			display: flex;
+			h4 {
+				font-size: 1.4rem;
+				margin: 0px;
+			}
+		}
+		.step-number-left {
+			h4 {
+				text-align: left;
+			}
+		}
+		.step-number-right {
+			h4 {
+				text-align: right;
+			}
+		}
+	}
 }
