@@ -224,3 +224,57 @@ h3 {
       color: #FFF;
       box-shadow: inset 0 0 0 3px #ead1dc;
       border-color: #ead1dc; }
+
+@media (max-width: 1440px) {
+  #hero {
+    height: 70vh; } }
+
+@media (max-width: 1024px) {
+  #block-1 #three-photos .image-div img {
+    height: 250px;
+    width: 250px; } }
+
+@media (max-width: 900px) {
+  #block-1 #three-photos .image-div img {
+    height: 200px;
+    width: 200px; }
+  #block-1 #three-photos .image-div h3 {
+    margin: 10px;
+    font-size: 1.8rem; } }
+
+@media (max-width: 768px) {
+  #hero {
+    height: 60vh; }
+    #hero h1 {
+      font-size: 7rem; }
+  nav a {
+    font-size: 1.8rem; }
+  #block-1 #three-photos .image-div img {
+    height: 175px;
+    width: 175px; } }
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 2rem; }
+  #hero h1 {
+    font-size: 6rem; }
+  nav a {
+    font-size: 1.6rem; }
+  #block-1 #three-photos .image-div img {
+    height: 150px;
+    width: 150px; }
+  #block-1 #three-photos .image-div h3 {
+    font-size: 1.5rem; } }
+
+@media (max-width: 530px) {
+  #hero h1 {
+    font-size: 5rem; }
+  nav a {
+    font-size: 1.5rem; }
+  #block-1 #three-photos .image-div img {
+    height: 125px;
+    width: 125px; } }
+
+@media (max-width: 425px) {
+  #hero {
+    height: 50vh; } }
