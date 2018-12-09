@@ -1,17 +1,16 @@
 @charset "UTF-8";
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  color: #292828; }
   body p {
     text-align: justify; }
-
-nav, section, footer {
-  width: 100vw; }
 
 nav {
   height: 5vh;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  align-items: center; }
   nav a {
     font-size: 2rem;
     color: #000;
@@ -57,6 +56,7 @@ h3 {
 .content {
   background-color: #FFF;
   margin: auto;
+  margin-bottom: 30px;
   text-align: center; }
   .content h2 {
     text-align: center; }
@@ -79,7 +79,7 @@ h3 {
     margin: 0 5vw; }
     .testimonial .testimonial-content img {
       height: 85%;
-      max-height: 200px;
+      max-height: 150px;
       border-radius: 50%;
       margin: auto; }
     .testimonial .testimonial-content .quote p {
@@ -99,6 +99,15 @@ h3 {
     .testimonial .testimonial-content blockquote:after {
       font-size: 4rem;
       content: close-quote; }
+  .testimonial a {
+    color: #FFF;
+    font-family: 'Roboto', sans-serif; }
+
+#testimonial-2 img {
+  order: 2; }
+
+#testimonial-2 .quote {
+  order: 1; }
 
 #block-2 .step {
   margin: 40px 0; }
@@ -132,3 +141,72 @@ h3 {
     text-align: left; }
   #block-2 .step .step-number-right h4 {
     text-align: right; }
+
+#block-3 #about-wrapper {
+  display: flex; }
+  #block-3 #about-wrapper img {
+    height: 300px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-radius: 9px; }
+  #block-3 #about-wrapper #about-content p:first-child {
+    margin-top: 0px; }
+  #block-3 #about-wrapper #about-content p#signature {
+    font-family: 'Caveat', cursive;
+    font-size: 1.3rem; }
+
+#contact p#contact-message {
+  margin: 10px;
+  text-align: center; }
+
+#contact #contact-form {
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0;
+  transition: opacity .5s;
+  margin: 20px auto; }
+  #contact #contact-form .form-element {
+    display: flex;
+    justify-content: center;
+    margin: 20px; }
+    #contact #contact-form .form-element label {
+      text-align: right;
+      margin-right: 15px;
+      width: 100px;
+      padding-top: 5px; }
+    #contact #contact-form .form-element input {
+      height: 20px;
+      font-size: 1.1rem; }
+    #contact #contact-form .form-element input.submit-button {
+      height: 30px;
+      font-size: 1rem; }
+    #contact #contact-form .form-element input, #contact #contact-form .form-element textarea {
+      padding: 5px;
+      width: 471px;
+      margin: 0px 0px 10px 0px;
+      border: 2px solid #ccc;
+      border-radius: 2px;
+      transition: 0.25s linear;
+      /* vendorless fallback */
+      -o-transition: 0.25s linear;
+      /* opera */
+      -ms-transition: 0.25s linear;
+      /* IE 10 */
+      -moz-transition: 0.25s linear;
+      /* Firefox */
+      -webkit-transition: 0.25s linear;
+      /*safari and chrome */ }
+    #contact #contact-form .form-element textarea {
+      height: 90px; }
+    #contact #contact-form .form-element textarea:focus, #contact #contact-form .form-element input:focus {
+      border: 2px solid #ead1dc; }
+    #contact #contact-form .form-element input.submit-button {
+      width: 100px;
+      margin: auto;
+      background-color: #FFF; }
+    #contact #contact-form .form-element input.submit-button:hover {
+      background: #ead1dc;
+      color: #FFF;
+      box-shadow: inset 0 0 0 3px #ead1dc;
+      border-color: #ead1dc; }
