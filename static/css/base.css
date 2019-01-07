@@ -4,13 +4,13 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #292828; }
   body p {
     text-align: justify; }
 
 nav {
-  height: 5vh;
+  height: 50px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -25,16 +25,15 @@ nav {
     text-decoration: none; }
   nav a:hover {
     text-decoration: underline; }
+  nav img {
+    height: 30px;
+    margin-top: 10px; }
 
 a:target {
   display: block;
   position: relative;
   top: -50px;
   visibility: hidden; }
-
-footer {
-  height: 10vh;
-  background-color: #C3C6CC; }
 
 h1, h2, h3, h4, a, .number-circle {
   font-family: 'Amatic SC', cursive; }
@@ -116,7 +115,7 @@ h3 {
       content: close-quote; }
   .testimonial a {
     color: #FFF;
-    font-family: 'Roboto', sans-serif; }
+    font-family: "Roboto", sans-serif; }
 
 #testimonial-2 img {
   order: 2; }
@@ -249,6 +248,28 @@ h3 {
     opacity: .9 !important;
     z-index: 10 !important; }
 
+footer {
+  width: 100%;
+  background-color: #C3C6CC; }
+  footer p {
+    text-align: center; }
+  footer #main-footer-content {
+    padding-top: 10px;
+    font-size: 0.8rem; }
+    footer #main-footer-content img {
+      height: 20px;
+      display: block;
+      margin: auto; }
+  footer #website-attribution {
+    background-color: #FFF; }
+    footer #website-attribution p {
+      font-size: 0.7rem;
+      margin: 0px;
+      padding: 2px; }
+    footer #website-attribution a {
+      font-family: "Roboto", sans-serif;
+      color: #000; }
+
 @media (max-width: 1440px) {
   #hero {
     height: 70vh; } }
@@ -270,12 +291,20 @@ h3 {
   #hero {
     height: 60vh; }
     #hero h1 {
-      font-size: 7rem; }
+      font-size: 6rem; }
   nav a {
     font-size: 1.8rem; }
+  h2 {
+    font-size: 2rem; }
+  p {
+    font-size: 0.9rem; }
+  #block-1 #three-photos .image-div h3 {
+    font-size: 1.4rem; }
   #block-1 #three-photos .image-div img {
     height: 175px;
-    width: 175px; } }
+    width: 175px; }
+  .testimonial .quote blockquote {
+    font-size: 1.2rem !important; } }
 
 @media (max-width: 600px) {
   h2 {
@@ -290,15 +319,43 @@ h3 {
   #block-1 #three-photos .image-div h3 {
     font-size: 1.5rem; } }
 
-@media (max-width: 530px) {
-  #hero h1 {
-    font-size: 5rem; }
+@media (max-width: 570px) {
   nav a {
     font-size: 1.5rem; }
+  #hero {
+    height: 60vh; }
+    #hero h1 {
+      font-size: 5rem; }
+  .testimonial .testimonial-content {
+    margin: 0 -10px; }
+  .testimonial img {
+    display: none; } }
+
+@media (max-width: 530px) {
   #block-1 #three-photos .image-div img {
     height: 125px;
     width: 125px; } }
 
 @media (max-width: 425px) {
+  nav a {
+    font-size: 1.2rem; }
+  nav img {
+    height: 20px;
+    margin-top: 5px; }
   #hero {
-    height: 50vh; } }
+    height: 50vh; }
+    #hero h1 {
+      font-size: 4rem; }
+  #block-1 #three-photos .image-div img {
+    height: 100px;
+    width: 100px; }
+  #block-1 #three-photos .image-div h3 {
+    font-size: 1rem; }
+  .testimonial .testimonial-content {
+    margin: 0 -15px; }
+  #block-3 #about-wrapper {
+    flex-direction: column; }
+    #block-3 #about-wrapper img {
+      margin: auto;
+      margin-bottom: 10px;
+      height: 300px; } }
