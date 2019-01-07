@@ -170,60 +170,84 @@ h3 {
     font-family: 'Caveat', cursive;
     font-size: 1.3rem; }
 
-#contact p#contact-message {
-  margin: 10px;
-  text-align: center; }
-
-#contact #contact-form {
-  width: 100%;
-  top: 0;
-  left: 0;
-  padding: 0;
-  margin: 20px auto; }
-  #contact #contact-form .form-element {
+#contact {
+  display: block;
+  position: relative; }
+  #contact p#contact-message {
+    margin: 10px;
+    text-align: center; }
+  #contact #contact-form {
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 0;
+    transition: opacity .5s;
+    margin: 20px auto; }
+    #contact #contact-form .form-element {
+      display: flex;
+      justify-content: center;
+      margin: 20px; }
+      #contact #contact-form .form-element label {
+        text-align: right;
+        margin-right: 15px;
+        width: 100px;
+        padding-top: 5px; }
+      #contact #contact-form .form-element input {
+        height: 20px;
+        font-size: 1.1rem; }
+      #contact #contact-form .form-element input.submit-button {
+        height: 30px;
+        font-size: 1rem; }
+      #contact #contact-form .form-element input, #contact #contact-form .form-element textarea {
+        padding: 5px;
+        width: 471px;
+        margin: 0px 0px 10px 0px;
+        border: 2px solid #ccc;
+        border-radius: 2px;
+        transition: 0.25s linear;
+        /* vendorless fallback */
+        -o-transition: 0.25s linear;
+        /* opera */
+        -ms-transition: 0.25s linear;
+        /* IE 10 */
+        -moz-transition: 0.25s linear;
+        /* Firefox */
+        -webkit-transition: 0.25s linear;
+        /*safari and chrome */ }
+      #contact #contact-form .form-element textarea {
+        height: 90px;
+        font-size: 1rem; }
+      #contact #contact-form .form-element textarea:focus, #contact #contact-form .form-element input:focus {
+        border: 2px solid #ead1dc; }
+      #contact #contact-form .form-element input.submit-button {
+        width: 100px;
+        margin: auto;
+        background-color: #FFF; }
+      #contact #contact-form .form-element input.submit-button:hover {
+        background: #ead1dc;
+        color: #FFF;
+        box-shadow: inset 0 0 0 3px #ead1dc;
+        border-color: #ead1dc; }
+  #contact #overlay {
     display: flex;
+    background-color: #ead1dc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: -10px;
+    align-items: center;
     justify-content: center;
-    margin: 20px; }
-    #contact #contact-form .form-element label {
-      text-align: right;
-      margin-right: 15px;
-      width: 100px;
-      padding-top: 5px; }
-    #contact #contact-form .form-element input {
-      height: 20px;
-      font-size: 1.1rem; }
-    #contact #contact-form .form-element input.submit-button {
-      height: 30px;
-      font-size: 1rem; }
-    #contact #contact-form .form-element input, #contact #contact-form .form-element textarea {
-      padding: 5px;
-      width: 471px;
-      margin: 0px 0px 10px 0px;
-      border: 2px solid #ccc;
-      border-radius: 2px;
-      transition: 0.25s linear;
-      /* vendorless fallback */
-      -o-transition: 0.25s linear;
-      /* opera */
-      -ms-transition: 0.25s linear;
-      /* IE 10 */
-      -moz-transition: 0.25s linear;
-      /* Firefox */
-      -webkit-transition: 0.25s linear;
-      /*safari and chrome */ }
-    #contact #contact-form .form-element textarea {
-      height: 90px; }
-    #contact #contact-form .form-element textarea:focus, #contact #contact-form .form-element input:focus {
-      border: 2px solid #ead1dc; }
-    #contact #contact-form .form-element input.submit-button {
-      width: 100px;
-      margin: auto;
-      background-color: #FFF; }
-    #contact #contact-form .form-element input.submit-button:hover {
-      background: #ead1dc;
-      color: #FFF;
-      box-shadow: inset 0 0 0 3px #ead1dc;
-      border-color: #ead1dc; }
+    transition: 1s ease-out;
+    opacity: 0;
+    z-index: -1;
+    color: #FFF;
+    font-size: 1.4rem;
+    border-radius: 2px; }
+  #contact .show {
+    opacity: .9 !important;
+    z-index: 10 !important; }
 
 @media (max-width: 1440px) {
   #hero {

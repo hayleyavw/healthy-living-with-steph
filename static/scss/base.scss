@@ -233,6 +233,8 @@ h3 {
 }
 
 #contact {
+	display: block;
+	position: relative;
 	p#contact-message {
 		margin: 10px;
 		text-align: center;
@@ -242,7 +244,7 @@ h3 {
 	    top: 0;
 	    left: 0;
 	    padding: 0;
-	    // transition: opacity .5s;
+	    transition: opacity .5s;
 		margin: 20px auto;
 		.form-element {
 			display: flex;
@@ -277,6 +279,7 @@ h3 {
 			}
 			textarea {
 				height: 90px;
+				font-size: 1rem;
 			}
 			textarea:focus, input:focus {
 				border: 2px solid $pink;
@@ -293,6 +296,28 @@ h3 {
 				border-color: $pink;
 			}
 		}
+	}
+	#overlay {
+		display: flex;
+	    background-color: $pink;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    margin-bottom: -10px;
+	    align-items: center;
+	    justify-content: center;
+	    transition: 1s ease-out;
+	    opacity: 0;
+		z-index: -1;
+		color: #FFF;
+		font-size: 1.4rem;
+		border-radius: 2px;
+	}
+	.show {
+		opacity: .9 !important;
+		z-index: 10 !important;
 	}
 }
 

@@ -20,7 +20,10 @@
   },
   "homepage": "https://github.com/hayleyavw/healthy-living-with-steph#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "email-validator": "^2.0.4",
     "express": "^4.16.4",
+    "mailgun-js": "^0.22.0",
     "node-sass": "^4.10.0",
     "scss-compile": "^0.1.7"
   }
