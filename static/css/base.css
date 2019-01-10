@@ -48,6 +48,9 @@ h2 {
 h3 {
   font-size: 2rem; }
 
+h4 {
+  font-size: 1.4rem; }
+
 #hero {
   height: 80vh;
   position: relative;
@@ -149,7 +152,6 @@ h3 {
   #block-2 .step .step-number-left, #block-2 .step .step-number-right {
     display: flex; }
     #block-2 .step .step-number-left h4, #block-2 .step .step-number-right h4 {
-      font-size: 1.4rem;
       margin: 0px; }
   #block-2 .step .step-number-left h4 {
     text-align: left; }

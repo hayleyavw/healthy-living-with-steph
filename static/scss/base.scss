@@ -63,6 +63,10 @@ h3 {
 	font-size: 2rem;
 }
 
+h4 {
+	font-size: 1.4rem;
+}
+
 #hero {
 	height: 80vh;
 	position: relative;
@@ -194,7 +198,6 @@ h3 {
 		.step-number-left, .step-number-right {
 			display: flex;
 			h4 {
-				font-size: 1.4rem;
 				margin: 0px;
 			}
 		}
