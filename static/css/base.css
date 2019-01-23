@@ -96,8 +96,7 @@ h4 {
   padding: 20px; }
   .testimonial .testimonial-content {
     height: 100%;
-    display: flex;
-    margin: 0 5vw; }
+    display: flex; }
     .testimonial .testimonial-content img {
       height: 85%;
       max-height: 150px;
@@ -132,27 +131,29 @@ h4 {
 
 #block-2 .step {
   margin: 40px 0; }
-  #block-2 .step .number-circle {
-    border-radius: 50%;
-    width: 210px;
-    height: 70px;
-    padding: 20px;
-    background: #fff;
-    color: #666;
-    text-align: center;
-    font-size: 3rem;
-    font-weight: bold; }
-  #block-2 .step #number-1 {
-    background-color: #ead1dc; }
-  #block-2 .step #number-2 {
-    background-color: #ffe599;
-    margin: auto;
-    margin-left: 40px !important; }
-  #block-2 .step #number-3 {
-    background-color: #9fc5e8; }
-  #block-2 .step #number-1, #block-2 .step #number-3 {
-    margin: auto;
-    margin-right: 40px !important; }
+  #block-2 .step .number-div {
+    flex-basis: 210px; }
+    #block-2 .step .number-div .number-circle {
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      padding: 20px;
+      background: #fff;
+      color: #666;
+      text-align: center;
+      font-size: 3rem;
+      font-weight: bold; }
+    #block-2 .step .number-div #number-1 {
+      background-color: #ead1dc; }
+    #block-2 .step .number-div #number-2 {
+      background-color: #ffe599;
+      margin: auto;
+      margin-left: 40px !important; }
+    #block-2 .step .number-div #number-3 {
+      background-color: #9fc5e8; }
+    #block-2 .step .number-div #number-1, #block-2 .step .number-div #number-3 {
+      margin: auto;
+      margin-right: 40px !important; }
   #block-2 .step .step-number-left, #block-2 .step .step-number-right {
     display: flex; }
     #block-2 .step .step-number-left h4, #block-2 .step .step-number-right h4 {
@@ -164,11 +165,25 @@ h4 {
 
 #block-3 #about-wrapper {
   display: flex; }
-  #block-3 #about-wrapper img {
-    height: 300px;
+  #block-3 #about-wrapper #about-images .about-image {
     margin-right: 20px;
-    margin-bottom: 10px;
-    border-radius: 9px; }
+    margin-bottom: 20px;
+    width: 225px; }
+    #block-3 #about-wrapper #about-images .about-image img {
+      height: 300px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 9px;
+      z-index: -1; }
+    #block-3 #about-wrapper #about-images .about-image h4 {
+      margin-top: -42px;
+      margin-bottom: 0px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-radius: 0px 0px 9px 9px;
+      background-color: #C3C6CC;
+      opacity: 0.8;
+      color: #FFF; }
   #block-3 #about-wrapper #about-content p:first-child {
     margin-top: 0px; }
   #block-3 #about-wrapper #about-content p#signature {
@@ -340,7 +355,31 @@ footer {
 @media (max-width: 530px) {
   #block-1 #three-photos .image-div img {
     height: 125px;
-    width: 125px; } }
+    width: 125px; }
+  #block-2 .step .number-div {
+    display: none; }
+  #block-2 #step-1 #step-content h4:before {
+    content: "1. "; }
+  #block-2 #step-2 #step-content h4 {
+    text-align: left !important; }
+  #block-2 #step-2 #step-content h4:before {
+    content: "2. "; }
+  #block-2 #step-3 #step-content h4:before {
+    content: "3. "; }
+  #block-3 #about-wrapper {
+    flex-direction: column; }
+    #block-3 #about-wrapper #about-images {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px; }
+      #block-3 #about-wrapper #about-images .about-image {
+        margin: 2px; }
+        #block-3 #about-wrapper #about-images .about-image img {
+          margin: auto;
+          margin-bottom: 10px;
+          height: 300px; }
+        #block-3 #about-wrapper #about-images .about-image h4 {
+          margin-top: -52px; } }
 
 @media (max-width: 425px) {
   nav a {
@@ -358,10 +397,4 @@ footer {
   #block-1 #three-photos .image-div h3 {
     font-size: 1rem; }
   .testimonial .testimonial-content {
-    margin: 0 -15px; }
-  #block-3 #about-wrapper {
-    flex-direction: column; }
-    #block-3 #about-wrapper img {
-      margin: auto;
-      margin-bottom: 10px;
-      height: 300px; } }
+    margin: 0 -15px; } }
