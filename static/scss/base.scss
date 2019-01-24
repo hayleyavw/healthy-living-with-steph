@@ -227,11 +227,32 @@ h4 {
 
 #block-3 {
 	#about-wrapper {
-		display: flex;
-		#about-images {
-			.about-image {
-				margin-right: 20px;
-				margin-bottom: 20px;
+		#about-content {
+			#about-photo {
+				float: left;
+				img {
+					border-radius: 9px;
+					height: 200px;
+					width: 250px;
+					object-fit: cover;
+					margin-right: 10px;
+				}
+			}
+			#about-text {
+				p:first-child {
+					margin-top: 0px;
+				}
+				p#signature {
+					font-family: 'Caveat', cursive;
+					font-size: 1.3rem;
+				}
+			}
+		}
+		#before-after-images {
+			display: flex;
+			justify-content: center;
+			.before-after-image {
+				margin: 20px;
 				width: 225px;
 				img {
 				    height: 300px;
@@ -250,15 +271,6 @@ h4 {
 					opacity: 0.8;
 					color: #FFF;
 				}
-			}
-		}
-		#about-content {
-			p:first-child {
-				margin-top: 0px;
-			}
-			p#signature {
-				font-family: 'Caveat', cursive;
-				font-size: 1.3rem;
 			}
 		}
 	}
@@ -485,6 +497,19 @@ footer {
 		}
 		img {
 			display: none;
+		}
+	}
+	#block-3 #about-wrapper {
+		#about-content {
+			#about-photo img {
+				width: 150px;
+			}
+		}
+		#before-after-images {
+			.before-after-image {
+				width: 250px;
+				margin: 10px;
+			}
 		}
 	}
 }

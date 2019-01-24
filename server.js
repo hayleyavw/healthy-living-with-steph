@@ -28,7 +28,7 @@ app.post('/', function(req, res) {
 	}
 	var data = {
 	  from: email,
-	  to: 'contact@hayleyavw.com',
+	  to: 'healthylivingwithstephvw@gmail.com',
 	  subject: 'Message from ' + req.body.name,
 	  text: req.body.message
 	};

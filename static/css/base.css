@@ -163,19 +163,35 @@ h4 {
   #block-2 .step .step-number-right h4 {
     text-align: right; }
 
-#block-3 #about-wrapper {
-  display: flex; }
-  #block-3 #about-wrapper #about-images .about-image {
-    margin-right: 20px;
-    margin-bottom: 20px;
+#block-3 #about-wrapper #about-content #about-photo {
+  float: left; }
+  #block-3 #about-wrapper #about-content #about-photo img {
+    border-radius: 9px;
+    height: 200px;
+    width: 250px;
+    object-fit: cover;
+    margin-right: 10px; }
+
+#block-3 #about-wrapper #about-content #about-text p:first-child {
+  margin-top: 0px; }
+
+#block-3 #about-wrapper #about-content #about-text p#signature {
+  font-family: 'Caveat', cursive;
+  font-size: 1.3rem; }
+
+#block-3 #about-wrapper #before-after-images {
+  display: flex;
+  justify-content: center; }
+  #block-3 #about-wrapper #before-after-images .before-after-image {
+    margin: 20px;
     width: 225px; }
-    #block-3 #about-wrapper #about-images .about-image img {
+    #block-3 #about-wrapper #before-after-images .before-after-image img {
       height: 300px;
       width: 100%;
       object-fit: cover;
       border-radius: 9px;
       z-index: -1; }
-    #block-3 #about-wrapper #about-images .about-image h4 {
+    #block-3 #about-wrapper #before-after-images .before-after-image h4 {
       margin-top: -42px;
       margin-bottom: 0px;
       padding-top: 5px;
@@ -184,11 +200,6 @@ h4 {
       background-color: #C3C6CC;
       opacity: 0.8;
       color: #FFF; }
-  #block-3 #about-wrapper #about-content p:first-child {
-    margin-top: 0px; }
-  #block-3 #about-wrapper #about-content p#signature {
-    font-family: 'Caveat', cursive;
-    font-size: 1.3rem; }
 
 #contact {
   display: block;
@@ -350,7 +361,12 @@ footer {
   .testimonial .testimonial-content {
     margin: 0 -10px; }
   .testimonial img {
-    display: none; } }
+    display: none; }
+  #block-3 #about-wrapper #about-content #about-photo img {
+    width: 150px; }
+  #block-3 #about-wrapper #before-after-images .before-after-image {
+    width: 250px;
+    margin: 10px; } }
 
 @media (max-width: 530px) {
   #block-1 #three-photos .image-div img {
