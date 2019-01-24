@@ -18,7 +18,7 @@ app.listen(3000, function() {
 
 var mailgun = require("mailgun-js");
 var api_key = 'key-5f88a965cacbaa9907fc3a2f79083f7a';
-var DOMAIN = 'hayleyavw.com';
+var DOMAIN = 'puttinghealthatthetop.net';
 var mailgun = require('mailgun-js')({apiKey: api_key, domain: DOMAIN});
 
 app.post('/', function(req, res) {
@@ -33,9 +33,9 @@ app.post('/', function(req, res) {
 	  text: req.body.message
 	};
 
-	// mailgun.messages().send(data, function (error, body) {
-	  // console.log(body);
-	// });
+	mailgun.messages().send(data, function (error, body) {
+	  console.log(body);
+	});
 
 	res.status(200).send();
 })
