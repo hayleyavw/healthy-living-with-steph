@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express');
 const body_parser = require('body-parser');
 const validator = require("email-validator");
@@ -16,10 +17,9 @@ app.listen(3000, function() {
 	console.log("Server running on 3000");
 });
 
-var mailgun = require("mailgun-js");
-var api_key = 'key-5f88a965cacbaa9907fc3a2f79083f7a';
-var DOMAIN = 'puttinghealthatthetop.net';
-var mailgun = require('mailgun-js')({apiKey: api_key, domain: DOMAIN});
+const apiKey = process.env.API_KEY
+const DOMAIN = process.env.API_DOMAIN
+let mailgun = require('mailgun-js')({apiKey: apiKey, domain: DOMAIN});
 
 app.post('/', function(req, res) {
 	var email = req.body.email;
@@ -28,7 +28,7 @@ app.post('/', function(req, res) {
 	}
 	var data = {
 	  from: email,
-	  to: 'healthylivingwithstephvw@gmail.com',
+	  to: `${process.env.EMAIL}`,
 	  subject: 'Message from ' + req.body.name,
 	  text: req.body.message
 	};
