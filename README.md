@@ -1,2 +1,5 @@
-# healthy-living-with-steph
-This is the code for the Healthy Living with Steph website.
+# Website of Healthy Living with Steph
+
+https://phattcentral.com/
+
+This is the repository for the Healthy Living with Steph website.
